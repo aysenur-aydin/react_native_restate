@@ -13,8 +13,6 @@ import NoResults from "@/components/NoResults";
 export default function Explore() {
     const params = useLocalSearchParams<{query?: string; filter?: string;}>()
 
-
-
     const {data: properties, loading, refetch} = useAppwrite({
         fn: getProperties,
         params: {
